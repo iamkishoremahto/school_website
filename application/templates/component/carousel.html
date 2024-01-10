@@ -1,0 +1,47 @@
+<div class="container-fluid homeCarousel">
+    <div id="homeCarousel" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{{ url_for('static', filename = 'images/carousel-1.jpg') }}" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <h1 class="animate__animated animate__fadeInDown">The Best Kindergarten School For Your Child</h1>
+                    <p>Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo
+                        clita et kasd rebum sea elitr.</p>
+                    <div class="buttonsGroup">
+                        <a href="#" class="myBtn animate__animated animate__fadeInLeft">Learn More</a>
+                        <a href="#" class="myBtn animate__animated animate__fadeInRight">Our Classes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename = 'images/carousel-2.jpg') }}" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <h1 class="animate__animated animate__fadeInDown">Make A Brighter Future For Your Child</h1>
+                    <p>Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
+                    <div class="buttonsGroup">
+                        <a href="#" class="myBtn animate__animated animate__fadeInLeft">Learn More</a>
+                        <a href="#" class="myBtn animate__animated animate__fadeInRight">Our Classes</a>
+                    </div>
+                
+                </div>
+            </div>
+
+        </div>
+        <div class="next_prev_btn">
+            <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</div>

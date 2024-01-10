@@ -1,0 +1,45 @@
+<div class="container appoinment" id="appoinment">
+    <div class="row appoinment_row">
+        <div class="col form_details">
+            <h1>Make Appointment</h1>
+            <form class="appointment_form">
+                <div class="personal_details">
+                    <div class="details_sep">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="gaurdian_name" placeholder="Gaurdian Name">
+                            <label for="gaurdian_name">Gaurdian Name</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="gaurdian_email" placeholder="Gaurdian Email">
+                            <label for="gaurdian_email">Gaurdian Email</label>
+                        </div>
+                    </div>
+                    <div class="details_sep">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="child_name" placeholder="Child Name">
+                            <label for="child_name">Child Name</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="child_age" placeholder="Child Age">
+                            <label for="child_age">Child Age</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a message here" id="message"
+                            style="height: 100px"></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                </div>
+                <a href="#" class="myBtn">Submit</a>
+            </form>
+
+        </div>
+        <div class="col form_image">
+            <img src="{{ url_for('static', filename = 'images/appointment.jpg') }}" alt="">
+        </div>
+    </div>
+</div>

@@ -1,0 +1,86 @@
+.appoinment{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: $lightOrange;
+    border-radius: 15px;
+    padding: 0;
+    margin-bottom: 50px;
+    // padding: 15px 30px;
+  
+
+}
+.details_sep{
+    
+    width: 48%;
+}
+.appointment_form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    a{
+        text-align: center;
+        font-size: 1.5rem;
+        border-radius: 15px;
+    }
+}
+.appoinment_row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.form_details{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px;
+    h1{
+
+        font-family: 'Lobster Two', sans-serif;
+        font-weight: 900;
+        margin-bottom: 30px;
+    }
+
+
+}
+.personal_details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .form-floating{
+        width: 100%;
+    }
+  
+}
+
+.form_image{
+   
+    width: 100%;
+    object-fit: cover;
+    padding: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 100%;
+
+   
+    img{
+        height: 550px;
+        // width: 100%;
+       object-fit: cover;
+    
+    }
+}
+
+@media screen and (max-width:767px){
+    .details_sep{
+        width: 100%;
+    }
+    .personal_details{
+        flex-direction: column;
+    }
+}

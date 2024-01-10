@@ -1,0 +1,14 @@
+{% extends 'page_layout.html' %}
+{% include 'component/navbar.html' %}
+{% include 'component/carousel.html' %}
+{% include 'component/facilities.html' %}
+{% include 'component/about.html' %}
+{% include 'component/becomeATeacher.html' %}
+{% include 'component/classes.html' %}
+{% include 'component/appoinment.html' %}
+{% include 'component/teacher.html' %}
+{% include 'component/our_client.html' %}
+{% include 'component/footer.html' %}
+{% block scripts %}
+<script src="{{ url_for('static' , filename = 'js/navbar.js') }}"></script>
+{% endblock %}

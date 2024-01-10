@@ -1,0 +1,191 @@
+.homeCarousel {
+    overflow: hidden;
+
+}
+
+.carousel-indicators {
+    display: none;
+}
+
+.carousel-item {
+    img {
+        filter: brightness(80%);
+    }
+}
+
+.carousel-caption {
+
+
+    position: absolute;
+    top: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    left: 30px;
+    width: 50%;
+
+    h1 {
+        font-size: 50px;
+        font-weight: 700;
+        font-family: 'Lobster Two', sans-serif;
+        text-align: justify;
+    }
+
+    p {
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+
+    .buttonsGroup {
+        display: flex;
+        gap: 20px;
+    }
+}
+
+.myBtn {
+    padding: 15px 30px;
+    background-color: $orange;
+    color: $white;
+    font-weight: 500;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.2s linear;
+
+    &:hover {
+        background-color: $darkgreen;
+    }
+}
+
+#homeCarousel {
+    position: relative;
+
+    &::before {
+        position: relative;
+        content: "";
+        top: 13px;
+        height: 15px;
+        width: 100%;
+        display: block !important;
+        z-index: 15;
+        background-repeat: repeat-x;
+        background-size: contain;
+        background-image: url("/static/images/bg-header-top.png");
+    }
+
+    &::after {
+        position: relative;
+        content: "";
+        // top: 13px;
+        bottom: 15px;
+        // border: 12px solid red;
+        height: 15px;
+        width: 100%;
+        display: block !important;
+        z-index: 15;
+        background-repeat: repeat-x;
+        background-size: contain;
+        background-image: url("/static/images/bg-header-bottom.png");
+
+    }
+}
+
+
+
+.carousel-control-next,
+.carousel-control-prev {
+    border-radius: 50%;
+    border: 2px solid $white;
+    transition: background-color, border 0.3s ease-in-out;
+
+    &:hover {
+        background-color: $orange;
+        border: 2px solid $orange;
+    }
+}
+
+.next_prev_btn {
+    position: absolute;
+    top: 250px;
+    right: 0;
+    height: 250px;
+    width: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+
+    button {
+        position: relative !important;
+        height: 60px;
+        width: 60px;
+    }
+}
+
+
+@media screen and (min-width: 1020px) and (max-width:1350px) {
+    .carousel-caption {
+        top: 90px;
+
+        
+    }
+
+    .next_prev_btn {
+        top: 150px;
+    }
+
+}
+
+@media screen and (min-width: 600px) and (max-width:1000px) {
+    .myBtn {
+        padding: 10px 20px;
+    }
+
+    .carousel-caption {
+        top: 55px;
+
+        h1 {
+            font-size: 25px;
+        }
+    }
+
+    .next_prev_btn {
+        top: 150px;
+        height: 150px;
+    }
+
+}
+
+
+@media screen and (min-width: 360px) and (max-width:550px) {
+    .myBtn {
+        padding: 3px 6px;
+        font-size: 10px;
+    }
+
+    .carousel-caption {
+        top: 10px;
+
+        h1 {
+            font-size: 1rem !important;
+            margin-bottom: 0px;
+        }
+
+        p {
+            font-size: 0.5rem;
+            margin-bottom: 0px;
+        }
+    }
+
+    .next_prev_btn {
+        top: 60px;
+        height: 110px;
+        width: 46px;
+
+        button {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+}

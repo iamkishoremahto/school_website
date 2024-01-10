@@ -1,0 +1,87 @@
+.becomeATeacher{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 0;
+    
+    .teacherRow{
+        background-color: $lightOrange;
+        border-radius: 10px;
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+        // width: 100%;
+        
+    }
+    .image{
+        padding: 0;
+        
+        img{
+            width: 100%;
+            max-height: 360px;
+            object-fit:cover;
+        }
+    }
+    .content{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h1{
+            font-family: 'Lobster Two', sans-serif;
+            font-size: 50px;
+            color: $darkgreen;
+            font-weight: 900;
+        }
+       
+        p{
+            width: 80%;
+            color: $gray;
+        }
+
+        a{
+           width: 80%;
+           border-radius: 15px;
+           padding: 25px 50px;
+           text-align: center;
+           font-size: 1.3rem;
+           font-weight: 700;
+           span{
+            margin-left: 10px;
+           }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 912px) {
+    h1{
+        font-size: 40px !important;
+        margin-top: 10px;
+    }
+    .becomeATeacher{
+        margin-top: 0px;
+    }
+    .teacherRow{
+      
+        .content{
+
+            padding: 0;
+            align-items: center;
+            justify-content: center;
+            
+
+            a{
+                padding: 15px 30px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

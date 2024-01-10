@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$white : #fff;
+$orange : #e65637;
+$lightOrange2 : #ed7257;
+$lightOrange : #fbeceb;
+$darkgreen :#163741;
+$green : #4b8954;
+$lightGreen : #e9f2ee;
+$yellow : #f9ca2d;
+$lightYellow : #feeec3;
+$blue : #62ccf0;
+$lightBlue : #eaf9fe;
+$gray : #747b88;
+$black :#163741;
+$lightPink :#fdf5f3;
+$lightGray : #e8e8e8;
+
+
+
+
+
+
+@import 'navbar';
+@import 'carousel';
+@import 'facilities';
+@import 'about';
+@import 'becomeATeacher';
+@import 'classes';
+@import 'appoinment';
+@import 'teacher';
+@import 'our_client';
+@import 'footer';

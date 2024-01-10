@@ -1,0 +1,171 @@
+.classes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.class_wrapper{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.class_items{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.class_content{
+    // border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+
+    h1{
+        font-family: 'Lobster Two', sans-serif;
+        font-size: 50px;
+        font-weight: 900;
+    }
+    p{
+        width: 40%;
+        text-align: center;    }
+}
+.class{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.class_item{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 200px;
+    border-radius: 15px;
+    background-color: $lightOrange;
+    width: 400px;
+    transition: all 0.3s ease-in-out;
+
+
+    h1{
+        font-family: 'Lobster Two', sans-serif;
+        font-size: 35px;
+        font-weight: 900;
+    }
+    padding-top: 60px;
+    .class_item_image{
+        position: absolute;
+        top: -65px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        height: 250px;
+        border: 15px solid $lightOrange;
+    }
+
+    &:hover{
+        transform: translateY(-15px);
+    }
+
+}
+
+.teacher{
+    display: flex;
+    // align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    // padding: 20px;
+    gap: 20px;
+    width: 90%;
+
+}
+// .teacher_profile,.teacher_info{
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     flex-direction: column;
+// }
+
+.teacher_profile,.teacher_info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.course_cost{
+    background-color: $orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 35px;
+    p{
+        margin-bottom: 0;
+        color: $white;
+        font-weight: 400;
+    }
+}
+.teacher_info{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 10px;
+    img{
+        height: 70px;
+        border-radius: 50%;
+    }
+    p{
+        color: $orange;
+        font-weight: 700;
+        span{
+            color: $gray;
+             font-weight: 400;
+        }
+    }
+}
+
+.teacher_details{
+    .details{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        // border: 2px solid red;
+        p{
+            font-weight: 900;
+            span{
+                font-weight: 400;
+                color: $gray;
+            }
+            &:nth-child(1){
+                color: $orange;
+            }
+            &:nth-child(2){
+                color: $green;
+            }
+            &:nth-child(3){
+                color: $yellow;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 300px) and (max-width:401px){
+
+.class_item{
+    width: 350px;
+}
+
+.class_content{
+    p{
+        width: auto;
+    }
+}
+}
